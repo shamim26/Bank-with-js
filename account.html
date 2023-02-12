@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container lg:w-2/3 w-3/4 mx-auto bg-green-100">
+    <header>
+      <h1 class="lg:text-5xl md:text-4xl text-3xl text-center md:pt-20 pt-10">
+        Your Account
+        <span class="font-semibold text-violet-800">Details!</span>
+      </h1>
+    </header>
+    <main class="text-white">
+      <section class="grid md:grid-cols-3 md:gap-4 gap-3 md:mt-16 mt-10">
+        <div class="bg-green-300 rounded-lg px-4 py-6">
+          <h2 class="md:text-3xl text-2xl">Deposit</h2>
+          <p class="text-2xl">$<span id="deposit-balance">00</span></p>
+        </div>
+        <div class="bg-pink-300 rounded-lg px-4 py-6">
+          <h2 class="md:text-3xl text-2xl">Withdraw</h2>
+          <p class="text-2xl">$<span id="withdraw-balance">00</span></p>
+        </div>
+        <div class="bg-red-300 rounded-lg px-4 py-6">
+          <h2 class="md:text-3xl text-2xl">Balance</h2>
+          <p class="text-2xl">$<span id="total-balance">500</span></p>
+        </div>
+      </section>
+      <!-- Deposit and Withdraw -->
+      <section class="grid md:grid-cols-2 gap-3 lg:mt-14 mt-8">
+        <div class="bg-blue-400 rounded-lg py-6 pl-8 space-y-4">
+          <h3 class="md:text-3xl text-2xl text-sky-900">Please Deposit</h3>
+          <input
+            id="input-deposit"
+            class="block outline-none text-black rounded py-1 px-2 w-1/2"
+            type=""
+            placeholder="$ amount you want to deposit"
+          />
+          <button
+            id="btn-deposit"
+            class="bg-sky-700 hover:bg-sky-900 rounded font-semibold px-5 py-2"
+          >
+            Deposit
+          </button>
+        </div>
+        <div class="bg-purple-400 rounded-lg py-6 pl-8 space-y-4">
+          <h3 class="md:text-3xl text-2xl text-sky-900">Please Withdraw</h3>
+          <input
+            id="input-withdraw"
+            class="block outline-none text-black rounded py-1 px-2 w-1/2"
+            type=""
+            placeholder="$ amount you want to withdraw"
+          />
+          <button
+            id="btn-withdraw"
+            class="bg-sky-700 hover:bg-sky-900 rounded font-semibold px-5 py-2"
+          >
+            Withdraw
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- javascript -->
+    <script src="./js/clac.js"></script>
+  </body>
+</html>
